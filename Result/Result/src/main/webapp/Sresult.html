@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get The Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 14px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Get The Result</h1>
+        <form action="http://localhost:9090/Result/FindResult">
+            <label for="id">ID:</label>
+            <input type="text" name="id" id="id" required>
+            <input type="submit" value="SUBMIT">
+        </form>
+        <a href="http://localhost:9090/Result/Register.html">Register</a>
+    </div>
+</body>
+</html>

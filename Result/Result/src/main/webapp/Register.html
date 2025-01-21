@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #555555;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 14px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register Here</h1>
+        <form action="http://localhost:9090/Result/Store">
+            <label for="id">ID:</label>
+            <input type="text" name="id" id="id" required>
+            
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            
+            <label for="dep">Department:</label>
+            <input type="text" name="dep" id="dep" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+        <a href="http://localhost:9090/Result/Login.html">Login Here</a>
+    </div>
+</body>
+</html>
